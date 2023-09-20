@@ -13,3 +13,8 @@ if (ans === "yes") {
 } else {
   alert("Nope, nice try though!");
 }
+
+const alertButton = document.getElementById("alertBuutton");
+alertButton.addEventListener("click", () => {
+  alert("This is an alert message!");
+});
