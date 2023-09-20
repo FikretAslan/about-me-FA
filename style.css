@@ -1,7 +1,7 @@
 body {
   background-color: darkslategray;
-  margin: 32px;
-  padding: 32px;
+  margin: 16px;
+  padding: 16px;
 }
 
 h1 {
@@ -36,16 +36,16 @@ img {
 
 .column2 {
   width: 300px;
-  float: right;
+  margin-top: 100px;
+  margin-left: 110px;
+  padding-bottom: 300px;
   color: white;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 60px;
-  margin-left: 110px;
 }
 
 .column3 {
-  margin-top: 200px;
+  margin-top: 500px;
   margin-left: 110px;
   font-family: 1rem;
   color: white;
@@ -70,11 +70,11 @@ p {
   margin: 10px;
   height: 31%;
   width: 150px;
-  background-color: #333; /* Background color for the sidebar */
+  background-color: #333;
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-x: hidden;
 }
 
 .navbar ul {
@@ -89,13 +89,13 @@ p {
 .navbar a {
   text-decoration: none;
   font-size: 25px;
-  color: #fff; /* Text color for the links */
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #555; /* Background color on hover */
+  background-color: #555;
 }
 
 footer {
@@ -105,6 +105,6 @@ footer {
 }
 
 .button {
-  position: relative;
+  margin: 10%;
   float: right;
 }
