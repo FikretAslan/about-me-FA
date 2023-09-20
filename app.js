@@ -1,6 +1,8 @@
 let username = prompt("What is your name?");
 alert("Well hello there " + username + " and welcome to my website!");
 
+let guesses = "0";
+
 let ans = prompt("Do I have a degree in Sociology? (yes/no)")
   .toLowerCase()
   .trim();
@@ -63,7 +65,14 @@ if (ans5 === "no") {
   alert("Nope, nice try though!");
 }
 
-const alertButton = document.getElementById("alertBuutton");
-alertButton.addEventListener("click", () => {
-  alert("This is an alert message!");
-});
+let minNumber = 1;
+let maxNumber = 10;
+let attempts = 4;
+let mainNumber = 3;
+
+let guessNumber = prompt("Guess a number between 1-10");
+if (guessNumber === "3") {
+  alert("Wow you guessed it - well done dude!");
+} else {
+  alert("Nope you gotta try again!");
+}
