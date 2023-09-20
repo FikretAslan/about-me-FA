@@ -1,7 +1,7 @@
 let username = prompt("What is your name?");
 alert("Well hello there " + username + " and welcome to my website!");
 
-let guesses = "0";
+let correct = 0;
 
 let ans = prompt("Do I have a degree in Sociology? (yes/no)")
   .toLowerCase()
@@ -14,6 +14,9 @@ while (ans !== "yes" && ans !== "no") {
 
 if (ans === "yes") {
   alert("You are ABSOLUTELY correct!");
+  correct++;
+  console.log(correct);
+  console.log("Your guessing score is " + correct);
 } else {
   alert("Nope, nice try though!");
 }
@@ -24,6 +27,9 @@ while (ans2 !== "yes" && ans2 !== "no") {
 }
 if (ans2 === "yes") {
   alert("You are indeed correct!");
+  correct++;
+  console.log(correct);
+  console.log("Your guessing score is " + correct);
 } else {
   alert("Nope! Good try though.");
 }
@@ -37,6 +43,9 @@ while (ans3 !== "yes" && ans3 !== "no") {
 
 if (ans3 === "no") {
   alert("You are ABSOLUTELY correct!");
+  correct++;
+  console.log(correct);
+  console.log("Your guessing score is " + correct);
 } else {
   alert("Nope, nice try though!");
 }
@@ -50,6 +59,9 @@ while (ans4 !== "yes" && ans4 !== "no") {
 
 if (ans4 === "yes") {
   alert("You are ABSOLUTELY correct!");
+  correct++;
+  console.log(correct);
+  console.log("Your guessing score is " + correct);
 } else {
   alert("Nope, nice try though!");
 }
@@ -61,18 +73,11 @@ while (ans5 !== "yes" && ans5 !== "no") {
 
 if (ans5 === "no") {
   alert("You are ABSOLUTELY correct!");
+  correct++;
+  console.log(correct);
+  console.log("Your guessing score is " + correct);
 } else {
   alert("Nope, nice try though!");
 }
 
-let minNumber = 1;
-let maxNumber = 10;
-let attempts = 4;
-let mainNumber = 3;
-
-let guessNumber = prompt("Guess a number between 1-10");
-if (guessNumber === "3") {
-  alert("Wow you guessed it - well done dude!");
-} else {
-  alert("Nope you gotta try again!");
-}
+alert(`Well done, you got ${correct} out of 5 questions correct!`);
