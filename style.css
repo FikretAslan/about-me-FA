@@ -36,6 +36,7 @@ img {
 
 .column2 {
   width: 300px;
+  margin-top: -370px;
   float: right;
   padding-bottom: 300px;
   color: white;
