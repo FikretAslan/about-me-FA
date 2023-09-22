@@ -1,8 +1,6 @@
 // a function is a block of code in a container - we can use whenever we want.
 // a function definition may also be referred to as
 // function invoke
-let username = prompt("What is your name?");
-alert("Well hello there " + username + " and welcome to my website!");
 
 let correct = 0;
 
@@ -85,9 +83,10 @@ function askQuestion() {
   } else {
     alert("Nope, nice try though!");
   }
+}
+// guessing number game
 
-  // guessing number game
-
+function askNumber() {
   let answer = 4;
   let number = prompt("Guess a number between 1 and 10");
   let attempts = 4;

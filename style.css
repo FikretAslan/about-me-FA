@@ -1,7 +1,7 @@
 body {
-  background-color: darkslategray;
-  margin: 16px;
-  padding: 16px;
+  background-color: rgb(75, 205, 231);
+  margin: 32px;
+  padding: 32px;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
   font-family: monospace;
   font-size: 96px;
   font-weight: 700;
-  background-image: linear-gradient(to left, #04fdfd, #b393d3);
+  background-image: linear-gradient(to left, #0d7f7f, #065e82);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -45,12 +45,24 @@ img {
 }
 
 .column3 {
-  margin-top: 400px;
+  border-top: 4px solid #000000;
+  position: relative;
+  margin-top: 150px;
   margin-left: 110px;
   font-family: 1rem;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.column4 {
+  border-top: 4px solid #000000;
+  margin-top: 150px;
+  margin-left: 110px;
+  font-family: 1rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
@@ -58,7 +70,8 @@ p {
 }
 
 .topten {
-  margin-top: 400px;
+  border-top: 4px solid #000000;
+  margin-top: 150px;
   margin-left: 110px;
   font-family: 1rem;
   color: white;
@@ -112,7 +125,31 @@ footer {
   font-size: 10px;
 }
 
-.button {
-  margin: 10%;
-  float: right;
+#button1 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+#button2 {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.changeTheme {
+  background: #21221d;
+  color: #eee;
+}
+
+#theme-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #0a0a0a;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+#theme-btn:hover {
+  color: #670fe1;
 }

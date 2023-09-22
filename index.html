@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="./app.js"></script>
     <title>Web Profile</title>
   </head>
@@ -11,14 +12,31 @@
     <header>
       <h1>Web Profile</h1>
     </header>
+    <div id="theme-btn" class="far fa-moon"></div>
+    <script>
+      const themeBtn = document.getElementById("theme-btn");
+      themeBtn.onclick = () => {
+        themeBtn.classList.toggle("fa-sun");
+        if (themeBtn.classList.contains("fa-sun")) {
+          document.body.classList.add("changeTheme");
+        } else {
+          document.body.classList.remove("changeTheme");
+        }
+      }
+      </script>
     <main>
-      <button id="alertButton">Quiz</button>
+      <div id="button1">
+      <button onclick="askQuestion()">About me quiz</button>
+      </div>
+      <div id="button2">
+      <button onclick="askNumber()">Number Game</button>
+      </div>
       <div class="navbar">
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#experiences">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="LinkedIn">
@@ -31,7 +49,7 @@
           />
         </a>
       </div>
-      
+      <section id="aboutme">
       <div class="column1">
         <h2>About me</h2>
         <p>
@@ -45,6 +63,7 @@
           customer at the center of everything I do.
         </p>
       </div>
+    </section>
       <img src="profilepic.jpg" alt="picture">
 
       <div class="column2">
@@ -57,6 +76,7 @@
           <li>GitHub</li>
         </ul>
       </div>
+      <section id="experiences">
       <div class="column3">
         <h2>Experience</h2>
         <p>
@@ -91,8 +111,24 @@
           <li>Completed and passed NQT year (2017).</li>
         </ul>
       </div>
+    </section>
+    <section id=education
+      <div class="column4">
+        <h2>Education</h2>
+        <p>
+          <ol>
+            <li>London Metropolitan University</li>
+            <li>University of Westminster</li>
+            <li>Long Road Sixth Form College</li>
+            <li>The Manor Foundation School</li>
+          </ol>
+        </p>
+      </section>
+
+      
+      </div>
       <div class="topten">
-        <h3>My top ten movies</h3>
+        <h2>My top ten movies</h2>
         <ol>
           <li>The Lord of the Rings Trilogy</li>
           <li>Star Wars (all of them?)</li>
@@ -105,12 +141,31 @@
           <li>Goodfellas</li>
           <li>Gladiator</li>
         </ol>
-
-
-
-
       </div>
     </main>
     <footer<h2>All rights reserved.</h2></footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const navLinks = document.querySelectorAll("nav ul li a");
+  
+          navLinks.forEach(link => {
+              link.addEventListener("click", scrollToSection);
+          });
+  
+          function scrollToSection(event) {
+              event.preventDefault();
+  
+              const targetId = this.getAttribute("href").substring(1);
+              const targetSection = document.getElementById(targetId);
+  
+              if (targetSection) {
+                  window.scrollTo({
+                      top: targetSection.offsetTop,
+                      behavior: "smooth"
+                  });
+              }
+          }
+      });
+  </script>
   </body>
 </html>
